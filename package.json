@@ -1,0 +1,18 @@
+{
+  "name": "ics4u-unit2-01-typescript",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.23.10",
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bun-promptx": "^0.2.0",
+    "eslint": "^8.57.0"
+  }
+}
