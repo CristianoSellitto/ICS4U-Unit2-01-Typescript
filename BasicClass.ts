@@ -1,6 +1,6 @@
 /**
 *
-* This class creates a list of integers
+* This class creates a list of strings
 *
 * By:      Cristiano Sellitto
 * Version: 1.0
@@ -8,14 +8,14 @@
 */
 
 export class BasicClass {
-  private array: number[]
+  private array: string[]
 
   public constructor() {
     this.array = []
   }
 
-  public push(integer: number) {
-    this.array.push(integer)
+  public push(string: string) {
+    this.array.push(string)
   }
 
   public showStack() {

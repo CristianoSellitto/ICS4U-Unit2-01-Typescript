@@ -1,6 +1,6 @@
 /**
 *
-* This program uses a basic class to make an array of integers
+* This program uses a basic class to make an array of strings
 *
 * By:      Cristiano Sellitto
 * Version: 1.0
@@ -12,20 +12,11 @@ import { createPrompt } from 'bun-promptx'
 
 const basicStack = new BasicClass()
 
-while (true) {
-  // String values
-  const intString = createPrompt('Enter an integer (enter a NaN value to stop): ')
+// String value
+const string = createPrompt('Enter a string: ')
 
-  // Convert variables to integer and check for errors
-  const integer = parseInt(intString.value)
-  if (isNaN(integer) == true) {
-    // Invalid input
-    break
-  } else {
-    // Valid input
-    basicStack.push(integer)
-  }
-}
+const stringValue = string.value
+basicStack.push(stringValue)
 
 // Show the stack's value
 basicStack.showStack()
