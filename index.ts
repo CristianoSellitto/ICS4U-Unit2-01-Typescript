@@ -12,14 +12,17 @@ import { createPrompt } from 'bun-promptx'
 
 const basicStack = new BasicClass()
 
+for (let counter = 0; counter < 3; counter++) {
 // String value
-const string = createPrompt('Enter a string: ')
+  const string = createPrompt('Enter a string: ')
 
-const stringValue = string.value
-basicStack.push(stringValue)
+  const stringValue = string.value
+  basicStack.push(stringValue)
+}
 
 // Show the stack's value
-basicStack.showStack()
+const stackValues = basicStack.showStack()
+console.log(stackValues)
 
 // Show the program as done
 console.log('\nDone.')
